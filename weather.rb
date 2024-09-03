@@ -14,7 +14,9 @@ class Weather
   attr_reader :city
 
   def form_message
-    temperature.nil? ? 'City not found' : "In #{city} city today is #{temperature} celsius #{select_icon(temperature)}"
+    return 'City not found' if temperature.nil?
+
+    "In #{city} city today is #{temperature} celsius #{select_icon(temperature)}"
   end
 
   private
