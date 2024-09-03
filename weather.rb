@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
 require 'rest-client'
+require 'dotenv/load'
 
 class Weather
-  API_URL = 'api.openweathermap.org/data/2.5/'.freeze
-  APPID = '68d4fc523ce3a4ca6c3c39800cd1127f'.freeze
+  API_URL = ENV["API_URL"].freeze
+  APPID = ENV["APPID"].freeze
 
   def initialize(city)
     @city = city
