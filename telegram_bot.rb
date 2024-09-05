@@ -5,7 +5,7 @@ require 'dotenv/load'
 require_relative 'weather'
 
 class TelegramBot
-  TOKEN = ENV["TELEGRAM_BOT_TOKEN"].freeze
+  TOKEN = ENV['TELEGRAM_BOT_TOKEN'].freeze
 
   def run
     bot.listen do |message|

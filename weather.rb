@@ -4,8 +4,8 @@ require 'rest-client'
 require 'dotenv/load'
 
 class Weather
-  API_URL = ENV["API_URL"].freeze
-  APPID = ENV["APPID"].freeze
+  API_URL = ENV['API_URL'].freeze
+  APPID = ENV['APPID'].freeze
 
   def initialize(city)
     @city = city
