@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
+gem 'dotenv-rails'
 gem 'rest-client'
 gem 'telegram-bot-ruby'
-gem 'dotenv-rails'
+gem 'rubocop', require: false
